@@ -168,7 +168,7 @@ body{
 }
 
 .about-left h4{
-    color: #666;
+    color: #353434;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -204,3 +204,91 @@ body{
     object-fit: cover;
     object-position: right;
 }
+
+/* ######################### fOOD STYLING ################################# */
+
+#food{
+    padding: 5rem 0;
+}
+
+.food-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#food h2{
+    color: #555;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.img-container{
+    cursor: pointer;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.food-container .img-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-content{
+    top: 70%;
+    left: 50%;
+    z-index: 2;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+
+.img-container:hover .image-content{
+    top: 50%;
+    opacity: 1;
+}
+
+.image-content h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.image-content a{
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-content a:hover{
+    background-color: #117964;
+}
+
+.img-container::after{
+    content: "";
+    top: 70%;
+    left: 0%;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 30%;
+    display: block;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.767); 
+}
+
+.img-container:hover::after{
+    opacity: 1;
+    top: 0%;
+    height: 100%;
+}
+
+
