@@ -149,11 +149,22 @@ body{
 .about-right{
     padding: 30px;
     flex: 1 1 400px;
+    transform: translateX(150%);
+    animation: aboutanimate 1.3s ease-in-out  forwards;
 }
 
 .about-left{
     padding: 30px;
+    margin: auto;
     flex: 1 1 400px;
+    transform: translateX(-150%);
+    animation: aboutanimate 1.3s ease-in-out forwards;
+}
+
+@keyframes aboutanimate{
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .about-left h4{
@@ -166,6 +177,14 @@ body{
     font-size: 3.2rem;
 }
 
+.about-left h4::after{
+    content: "";
+    display: block;
+    width: 17%;
+    height: 3px;
+    background-color: #117964;
+}
+
 .about-left p{
     color: #555;
     font-size: 1.6rem;
@@ -173,15 +192,15 @@ body{
     letter-spacing: 1px;
 }
 
-
-
-
-
 .about-img{
     flex: 1 1 400px;
 }
 
 .about-img img{
+    margin: auto;
     height: 400px;
     display: block;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: right;
 }
