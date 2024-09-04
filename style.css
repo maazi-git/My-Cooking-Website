@@ -470,4 +470,18 @@ body{
     font-size: 1.2rem;
 }
 
+/* ################## FOOTER ################## */
+
+#footer{
+    padding: 2.5rem 0;
+    background-color: #272727;
+}
+
+#footer h2{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+}
+
 
