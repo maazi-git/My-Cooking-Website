@@ -39,6 +39,10 @@ body{
 .btn-primary{
     color: #fff;
     background-color: #16a083;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover{
+    background-color: #116150;
 }
 
 
@@ -404,9 +408,10 @@ body{
 }
 
 .customer-details .customer-name{
-    font-weight: 600;   
+    font-weight: 500;   
     margin-top: 1rem; 
     font-size: 1.6rem;
+    color: #555;
 }
 
 /* ######################### Contact STYLING ################################# */
